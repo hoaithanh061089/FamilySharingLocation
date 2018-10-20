@@ -1,0 +1,52 @@
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+         <android.support.v7.preference.SwitchPreferenceCompat
+            android:key="invisible_location"
+            android:title="Invisible location"
+            android:summary="Others members in your groups can't see your location history."
+            android:defaultValue="false" />
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:key="myplace_enable"
+            android:title="My place"
+            android:summary="Alow to send massage to my group's member when entering or exiting my places."
+            android:defaultValue="false" />
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:key="mynoti_enable"
+            android:title="Notification"
+            android:summary="Alow to receive notification from my group's member."
+            android:defaultValue="true" />
+        <android.support.v7.preference.ListPreference
+            android:key="distance_unit"
+            android:title="Distance unit"
+            android:entries="@array/distance_unit"
+            android:entryValues="@array/distanceunit_id"
+            />
+
+         <android.support.v7.preference.ListPreference
+            android:key="gps_list"
+            android:title="GPS interval"
+            android:entries="@array/GPS"
+            android:entryValues="@array/GPSvalue"
+            android:summary="How often does app update the GPS?"
+             />
+        <android.support.v7.preference.ListPreference
+            android:key="gps_accuracy"
+            android:title="GPS Accuracy"
+            android:entries="@array/gpsaccuracy"
+            android:entryValues="@array/gpsaccuracy_id"
+            android:summary="How accurate does the GPS work?"
+            />
+        <android.support.v7.preference.ListPreference
+            android:key="map_theme"
+            android:title="Map theme"
+            android:entries="@array/maptheme"
+            android:entryValues="@array/maptheme_id"
+            />
+        <android.support.v7.preference.PreferenceScreen
+            android:key="account_setting"
+            android:title="My account"
+            />
+
+
+</android.support.v7.preference.PreferenceScreen>

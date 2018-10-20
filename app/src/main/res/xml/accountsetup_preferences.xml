@@ -1,0 +1,30 @@
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Account setup">
+
+        <android.support.v7.preference.PreferenceScreen
+            android:key="delele_account"
+            android:title="Delete my account"
+            />
+        <android.support.v7.preference.PreferenceScreen
+            android:key="change_username"
+            android:title="Change my username"
+            />
+        <android.support.v7.preference.PreferenceScreen
+            android:key="change_userpass"
+            android:title="Change my password"
+            />
+        <android.support.v7.preference.PreferenceScreen
+            android:key="change_phone"
+            android:title="Change my phone number"
+            />
+
+
+
+    </android.support.v7.preference.PreferenceCategory>
+
+
+
+</android.support.v7.preference.PreferenceScreen>

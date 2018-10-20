@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shareapprounedlayout"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="15dp" >
+    
+    <TextView
+        android:id="@+id/shareapptv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="13dp"
+        android:textColor="#009688"
+        android:textSize="16.5sp"
+         />
+
+    <ListView
+        android:id="@+id/shareappcustomlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:divider="@android:color/transparent"
+        android:layout_below="@+id/shareapptv"
+        android:layout_above="@+id/cancelbutton"
+        android:layout_marginTop="20dp"
+         >
+    </ListView>
+    
+    <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/cancelbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                android:text="Cancel"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="17sp"
+               />
+
+    
+</RelativeLayout>

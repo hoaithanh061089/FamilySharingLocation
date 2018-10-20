@@ -1,0 +1,36 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowDisablePreview">true</item>
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/material_green_500</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/material_green_700</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/material_green_900</item>
+
+        <!-- You can also set colorControlNormal, colorControlActivated
+             colorControlHighlight, and colorSwitchThumbNormal. -->
+
+        <item name="colorButtonNormal">@color/material_green_900</item>
+        <item name="colorControlNormal">@color/material_green_900</item>
+        <item name="colorControlActivated">@color/material_green_900</item>
+        <item name="colorControlHighlight">@color/material_gray_200</item>
+        <!--//specify a preferenceTheme in our Activity’s theme. If we don’t do so, the App will crash with an IllegalStateException.-->
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+
+    </style>
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+</resources>

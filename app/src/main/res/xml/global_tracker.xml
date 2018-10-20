@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ga_trackingId" translatable="false">UA-111000976-1</string>
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+    <screenName name="thanhnguyen.com.familysharinglocation.LocationHistory">
+        Location History
+    </screenName>
+    <screenName name="thanhnguyen.com.familysharinglocation.ShowFamilyPositionOnMap">
+        Main Activity : ShowFamilyPositionOnMap
+    </screenName>
+    <screenName name="thanhnguyen.com.familysharinglocation.WeatherActivity">
+        Weather Activity
+    </screenName>
+    <screenName name="thanhnguyen.com.familysharinglocation.MyGroup">
+        My Group
+    </screenName>
+    <screenName name="thanhnguyen.com.familysharinglocation.MyPlaces">
+        My Places
+    </screenName>
+    <screenName name="thanhnguyen.com.familysharinglocation.AppSettingPreference">
+        App Setting Preference
+    </screenName>
+</resources>

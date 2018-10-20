@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "388634886645",
+    "firebase_url": "https://familysharinglocation.firebaseio.com",
+    "project_id": "familysharinglocation",
+    "storage_bucket": "familysharinglocation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388634886645:android:17b6e727ffa689e3",
+        "android_client_info": {
+          "package_name": "thanhnguyen.com.familysharinglocation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388634886645-40l0qhkb71lj6u7v71svsamf5qfuhm2e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "thanhnguyen.com.familysharinglocation",
+            "certificate_hash": "8b2ca288b0b4e67bba4859063c39062d8d45e2be"
+          }
+        },
+        {
+          "client_id": "388634886645-qlhfmmnl3t3829fcn3vs45aj03rk3555.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9nlnVVfwoIXsrXjyfV6_wugRmtSElI7s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388634886645-qlhfmmnl3t3829fcn3vs45aj03rk3555.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

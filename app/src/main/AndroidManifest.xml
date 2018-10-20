@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="thanhnguyen.com.familysharinglocation">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:name=".FamilySharingApplicationClass"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/familyicon"
+        android:label= "@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver
+            android:enabled="true" android:exported="true"
+            android:name=".BootCompletedIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".GpsLocationReceiver">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".LoginPage"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".FirstStartupActivity"
+            android:theme="@style/AppTheme">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".SignupAddMember" />
+        <activity android:name=".ForgetPasswordActivity" />
+        <activity android:name=".ShowFamilyPositionOnMap" />
+        <activity android:name=".LocationHistory" />
+        <activity android:name=".WeatherActivity" />
+        <activity android:name=".MyPlaces" />
+        <activity android:name=".AddPlaces" />
+        <activity android:name=".MyPlaceDetails" />
+        <activity android:name=".MyGroup" />
+        <activity android:name=".MyGroupDetails" />
+        <activity android:name=".AppSettingPreference" />
+        <activity android:name=".AccountSetup" />
+        <activity android:name=".MyPlaceMember" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name="za.co.riggaroo.materialhelptutorial.tutorial.MaterialTutorialActivity"/>
+
+        <service android:name=".LocationNotifyService" />
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD0C1XSwip9rrZKKK3af6V4BDnAYSRQn-Y" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>
